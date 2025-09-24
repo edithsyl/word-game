@@ -29,8 +29,37 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+
 ## Deploy on Vercel
+
+Open Homepage [https://word-game-aula-classa2.vercel.app](https://word-game-aula-classa2.vercel.app)
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Prisma
+run npx prisma studio
+[http://localhost:5555]
+
+
+## OAuth
+
+https://authjs.dev/guides/configuring-github
+
+
+## Space Repetition - SM-2 algorithm
+https://github.com/thyagoluciano/sm2
+
+
+## Progress
+### Done
+ 1. Github auth sign in & sign out
+ 2. Draft static UI: Quiz page for entering text, Game page for Set
+ 3. Postgres schema & setup DB with vercel
+ 4. Draft get words on Words page
+
+### Todo
+    1. Google auth
+    2. Figure out how to controller
+    3. Interactive get word and answer

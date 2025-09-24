@@ -6,7 +6,6 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../app/generated/prisma"
 }
 
 datasource db {
@@ -82,7 +81,7 @@ model VerificationToken {
 model Word {
   id            Int       @id @default(autoincrement())
   partOfSpeech  PartOfSpeech
-  infinitive    String
+  infinitive    String   @unique
   url           String
   present       PresentConjugation?
   preterite     PreteriteConjugation?
@@ -94,7 +93,7 @@ model Word {
 
 model PresentConjugation {
   id            Int      @id @default(autoincrement())
-  word_id       Int   @unique
+  word_id       Int      @unique
   word Word @relation(fields: [word_id], references: [id], onDelete: Cascade)
   yo           String
   tu           String
